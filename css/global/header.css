@@ -1,5 +1,5 @@
 .cabecalho {
-    background-color: #000000;
+    background-color: var(--cor-12);
 }
 
 .cabecalho__container {
@@ -24,11 +24,7 @@
 .cabecalho__lista-links a {
     padding: 16px 0;
     display: inline-block;
-    color: #ffffff;
-    font-size: 1.125rem;
     position: relative;
-    font-family: "Poppins";
-    font-weight: 400;
 }
 
 .cabecalho__lista-links a:after {
@@ -36,7 +32,7 @@
     display: block;
     height: 2px;
     width: 0%;
-    background-color: #ffffff;
+    background-color: var(--cor-0);
     margin-top: 4px;
     position: absolute;
 }
@@ -52,13 +48,13 @@
     }
 
     .cabecalho__lista-links a {
-        background: #111111;
+        background: var(--cor-11);
         padding: 12px 16px;
         border-radius: 4px;
     }
 
     .cabecalho__lista-links a:hover {
-        background-color: #2e2e2e;
+        background-color: var(--cor-10);
     }
 
     .cabecalho__lista-links a:after {
@@ -77,6 +73,6 @@
 
     .cabecalho__lista-links a {
         padding: 8px 12px;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }
