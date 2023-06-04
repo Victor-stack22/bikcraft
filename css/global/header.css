@@ -1,14 +1,11 @@
 .cabecalho {
     background-color: var(--cor-12);
+    padding: 20px 0;
 }
 
 .cabecalho__container {
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
