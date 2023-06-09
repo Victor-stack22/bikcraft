@@ -1,0 +1,19 @@
+#seguros {
+    padding-top: 0px;
+}
+
+.vantagens-bg {
+    background-color: var(--cor-12);
+}
+
+.vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.vantagens__itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px 20px;
+    gap: 50px;
+}
