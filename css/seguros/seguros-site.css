@@ -14,6 +14,41 @@
 .vantagens__itens {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 60px 20px;
+    padding: 60px 0px;
     gap: 50px;
+}
+
+.vantagens__itens img, h2 {
+    margin-bottom: 8px;
+}
+
+.perguntas {
+    padding: 160px 0;
+}
+
+.perguntas h2 {
+    margin-bottom: 60px;
+}
+
+.perguntas__frequentes {
+    padding: 20px 20px;
+}
+
+.perguntas__frequentes h4::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    background: var(--cor-p1);
+    margin-right: 8px;
+}
+
+.perguntas__frequentes p {
+    padding-left: 20px;
+    padding-top: 16px;
+    max-width: 80ch;
+}
+
+.perguntas__frequentes:nth-child(even) {
+    background-color: var(--cor-1);
 }
