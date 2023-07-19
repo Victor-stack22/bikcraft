@@ -34,7 +34,8 @@
     position: absolute;
 }
 
-.cabecalho__lista-links a:hover:after {
+.cabecalho__lista-links a:hover::after,
+.cabecalho__lista-links a.ativo::after {
     width: 100%;
     transition: 0.3s;
 }
