@@ -19,5 +19,21 @@ function ativarProduto(parametro) {
     elemento.checked = true;
   }
 }
-
 parametros.forEach(ativarProduto);
+
+//Perguntas Frequentes
+const perguntas = document.querySelectorAll(".perguntas__frequentes button");
+
+function eventoPerguntas(pergunta) {
+  pergunta.addEventListener("click", (event) => {
+    const pergunta = event.currentTarget;
+    const controls = pergunta.getAttribute("aria-controls");
+    const resposta = document.getElementById(controls);
+
+    resposta.classList.toggle("ativa");
+    const ativa = resposta.classList.contains("ativa");
+    pergunta.setAttribute("aria-expanded", ativa);
+  });
+}
+
+perguntas.forEach(eventoPerguntas);
