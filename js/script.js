@@ -35,5 +35,20 @@ function eventoPerguntas(pergunta) {
     pergunta.setAttribute("aria-expanded", ativa);
   });
 }
-
 perguntas.forEach(eventoPerguntas);
+
+//Galeria de Bicicletas
+const galeria = document.querySelectorAll(".bicicleta__imagens img");
+const galeiraImagens = document.querySelector(".bicicleta__imagens");
+
+function eventosGaleria(img) {
+  img.addEventListener("click", (event) => {
+    const imagem = event.currentTarget;
+    const media = matchMedia("(min-width: 1000px)").matches;
+    if (media) {
+      galeiraImagens.prepend(imagem);
+    }
+  });
+}
+
+galeria.forEach(eventosGaleria);
